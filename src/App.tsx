@@ -3,8 +3,8 @@ import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <NavBar />
         <h1>jlopezsa</h1>
       </header>
