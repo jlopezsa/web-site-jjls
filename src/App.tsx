@@ -1,12 +1,11 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
+import About from './pages/About';
 
 function App() {
   return (
     <div>
       <header>
-        <NavBar />
-        <h1>jlopezsa</h1>
+        <About />
       </header>
     </div>
   );
