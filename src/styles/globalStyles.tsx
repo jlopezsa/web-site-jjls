@@ -26,4 +26,6 @@ export const colors = {
   bc3: '#004052',
   bc4: '#005066',
   bc5: '#00607A',
+
+  wc1: '#D9D9D9',
 };
