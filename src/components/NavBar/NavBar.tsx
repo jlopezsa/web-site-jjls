@@ -19,8 +19,8 @@ const NB = {
     align-items: center;
   `,
   Img: styled.img`
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     padding-top: 50px;
     object-fit: cover;
     object-position: -10% 20%;
