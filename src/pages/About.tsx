@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import GlobalCard from "../components/GlobalCard";
-import NavBar from "../components/NavBar/NavBar"
+import NavBar from "../components/NavBar/NavBar";
 import SingleInfo from "../components/SingleInfo";
 import { colors } from '../styles/globalStyles';
+
+const swDeveloper = 'software-developer-640.jpg';
+const research = 'science_640.jpg';
+const teaching = 'mathematics_640.jpg';
 
 const Abt = {
   Container: styled.div`
@@ -49,17 +53,17 @@ function About() {
           <GlobalCard
             title="Developer"
             description="asdjsalkd jlksadj lksajdsalk jdlk"
-            colorText="red"
+            urlFig={swDeveloper}
             />
           <GlobalCard
             title="Researcher"
             description="asdjsalkd jlksadj lksajdsalk jdlk"
-            colorText="red"
+            urlFig={research}
             />
           <GlobalCard
             title="Professor"
             description="asdjsalkd jlksadj lksajdsalk jdlk"
-            colorText="red"
+            urlFig={teaching}
           />
         </Abt.SetCard>
         <Abt.HR/>
