@@ -1,7 +1,12 @@
 import styled from "styled-components";
-import NavBar from "../components/NavBar/NavBar"
+import GlobalCard from "../components/GlobalCard";
+import NavBar from "../components/NavBar/NavBar";
 import SingleInfo from "../components/SingleInfo";
 import { colors } from '../styles/globalStyles';
+
+const swDeveloper = 'software-developer-640.jpg';
+const research = 'science_640.jpg';
+const teaching = 'mathematics_640.jpg';
 
 const Abt = {
   Container: styled.div`
@@ -16,6 +21,16 @@ const Abt = {
     margin-left: 100px;
     margin-right: 100px;
   `,
+  SetCard: styled.div`
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  `
 }
 
 function About() {
@@ -34,6 +49,23 @@ function About() {
           title="Experience"
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos harum eaque odit voluptas dolores exercitationem qui atque! Facilis officiis voluptatibus rem! Quia, at dignissimos repellat alias tenetur explicabo aperiam. Non. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis autem ea velit. Architecto iure cumque maxime, reprehenderit minima ut, accusantium, ipsum incidunt repudiandae nesciunt sint libero aliquid! Architecto perspiciatis ratione quas voluptatibus sit et asperiores nulla voluptas aut dolorem dolore repellat praesentium in, ipsam eius consequatur. Sapiente eum molestias"
         />
+        <Abt.SetCard>
+          <GlobalCard
+            title="Developer"
+            description="asdjsalkd jlksadj lksajdsalk jdlk"
+            urlFig={swDeveloper}
+            />
+          <GlobalCard
+            title="Researcher"
+            description="asdjsalkd jlksadj lksajdsalk jdlk"
+            urlFig={research}
+            />
+          <GlobalCard
+            title="Professor"
+            description="asdjsalkd jlksadj lksajdsalk jdlk"
+            urlFig={teaching}
+          />
+        </Abt.SetCard>
         <Abt.HR/>
         <SingleInfo
           title="Study"
