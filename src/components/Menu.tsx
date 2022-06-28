@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const MENU = {
   NavLink: styled(NavLink)`
     color: ${colors.wc1};
-    font-size: ${fontsDesktop.headline4Desktop};
+    font-size: ${fontsDesktop.headline5Desktop};
     text-decoration: none;
     margin-top: 0px;
     margin-bottom: 20px;
