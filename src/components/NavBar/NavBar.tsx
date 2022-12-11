@@ -10,7 +10,7 @@ import Menu from "../Menu";
 
 const NB = {
   ContainerNavBar: styled.div`
-    width: 560px;
+    width: 400px;
     height: 100vh;
     background-color: ${colors.bc4};
     position: fixed;
@@ -19,8 +19,8 @@ const NB = {
     align-items: center;
   `,
   Img: styled.img`
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding-top: 50px;
     object-fit: cover;
     object-position: -10% 20%;
