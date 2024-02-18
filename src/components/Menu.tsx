@@ -1,45 +1,45 @@
-import { NavLink } from 'react-router-dom';
-import { colors, fontsDesktop } from '../styles/globalStyles';
-import styled from 'styled-components';
+import { NavLink } from "react-router-dom";
+import { colors, fontsDesktop } from "../styles/globalStyles";
+import styled from "styled-components";
 
-const MENU = {
-  NavLink: styled(NavLink)`
+const MenuComponent = {
+  navLink: styled(NavLink)`
     color: ${colors.wc1};
     font-size: ${fontsDesktop.headline5Desktop};
     text-decoration: none;
     margin-top: 0px;
     margin-bottom: 20px;
 
-    &:hover{
+    &:hover {
       color: ${colors.bc1};
       transition: 1000ms;
       text-decoration: underline;
     }
   `,
 
-  Ul: styled.ul`
+  ul: styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 73px;
     padding-left: 0px;
-    `,
-}
+  `,
+};
 
-function Menu() {
+const Menu = () => {
   return (
     <div>
       <nav>
-        <MENU.Ul>
-          <MENU.NavLink to="/">About</MENU.NavLink>
-          <MENU.NavLink to="/">Projects dev</MENU.NavLink>
-          <MENU.NavLink to="/">Study</MENU.NavLink>
-          <MENU.NavLink to="/">Research</MENU.NavLink>
-          <MENU.NavLink to="/">Teaching</MENU.NavLink>
-        </MENU.Ul>
+        <MenuComponent.ul>
+          <MenuComponent.navLink to="/">About</MenuComponent.navLink>
+          <MenuComponent.navLink to="/">Projects dev</MenuComponent.navLink>
+          <MenuComponent.navLink to="/">Study</MenuComponent.navLink>
+          <MenuComponent.navLink to="/">Research</MenuComponent.navLink>
+          <MenuComponent.navLink to="/">Teaching</MenuComponent.navLink>
+        </MenuComponent.ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
