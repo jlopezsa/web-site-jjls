@@ -27,7 +27,7 @@ const GC = {
     box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     width: 180px;
     background-color: ${colors.bc5};
-    opacity: 0.7;
+    opacity: 0.5;
     display: block;
     position: absolute;
     border-radius: 10px;
@@ -54,6 +54,7 @@ const GC = {
     margin-top: 50px;
     margin-bottom: 0px;
     margin-left: 10px;
+    font-weight: bold;
   `,
   img: styled.img`
     height: 250px;

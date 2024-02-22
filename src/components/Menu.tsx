@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { colors, fontsDesktop } from "../styles/globalStyles";
 import styled from "styled-components";
+import { MenuMessage } from "./messages/menu-messages";
 
 const MenuComponent = {
   navLink: styled(NavLink)`
@@ -31,11 +32,21 @@ const Menu = () => {
     <div>
       <nav>
         <MenuComponent.ul>
-          <MenuComponent.navLink to="/">About</MenuComponent.navLink>
-          <MenuComponent.navLink to="/">Projects dev</MenuComponent.navLink>
-          <MenuComponent.navLink to="/">Study</MenuComponent.navLink>
-          <MenuComponent.navLink to="/">Research</MenuComponent.navLink>
-          <MenuComponent.navLink to="/">Teaching</MenuComponent.navLink>
+          <MenuComponent.navLink to="/">
+            {MenuMessage.spa.abaout}
+          </MenuComponent.navLink>
+          <MenuComponent.navLink to="/">
+            {MenuMessage.spa.projects}
+          </MenuComponent.navLink>
+          <MenuComponent.navLink to="/">
+            {MenuMessage.spa.study}
+          </MenuComponent.navLink>
+          <MenuComponent.navLink to="/">
+            {MenuMessage.spa.research}
+          </MenuComponent.navLink>
+          <MenuComponent.navLink to="/">
+            {MenuMessage.spa.teaching}
+          </MenuComponent.navLink>
         </MenuComponent.ul>
       </nav>
     </div>

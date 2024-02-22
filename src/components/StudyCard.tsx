@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { colors, fontsDesktop } from "../styles/globalStyles";
 
-type InfoProps = {
+interface InfoProps {
   title: string;
   university: string;
   local: string;
   year: number;
   urlLogo: string;
-};
+}
 
 const SC = {
   container: styled.div`
@@ -37,7 +37,7 @@ const SC = {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    font-weight: lighter;
+    font-weight: bold;
   `,
   img: styled.img`
     height: 80px;
